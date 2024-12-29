@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* For WebKit browsers (Chrome, Safari) */
+.user-container::-webkit-scrollbar {
+  width: 8px; /* Thin scrollbar width */
+}
+
+.user-container::-webkit-scrollbar-track {
+  background: transparent; /* Transparent track for a smooth look */
+}
+
+.user-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent thumb color */
+  border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+.user-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.7); /* Darker thumb color on hover */
+}
+
+/* For Firefox */
+.user-container {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: rgba(0, 0, 0, 0.5) transparent; /* thumb color and track color */
+}
